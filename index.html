@@ -5,213 +5,141 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fahad Abdullah | Data Science Portfolio</title>
 <meta name="description" content="Portfolio of Fahad Abdullah, Data Science student with AI and machine learning internships, projects, leadership and volunteering.">
-<meta name="theme-color" content="#0b0b10">
+<meta name="theme-color" content="#08080c">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="topbar">
-  <span class="handle">fahad.abdullah</span>
-  <a class="mini-btn" href="#contact">Contact</a>
+<header class="nav" id="nav">
+  <a class="logo" href="#top">FAHAD</a>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#episodes">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="pill">Contact</a>
+  </nav>
 </header>
 
-<main class="wrap">
-
-  <!-- PROFILE -->
-  <section class="profile">
-    <div class="avatar-ring"><img src="photo.png" alt="Fahad Abdullah"></div>
-    <div class="info">
-      <div class="row-name">
-        <h1>Fahad Abdullah</h1>
-        <div class="btns">
-          <a class="btn primary" href="mailto:fahadx000111@gmail.com">Message</a>
-          <a class="btn" href="tel:+923434193249">Call</a>
-        </div>
-      </div>
-      <ul class="stats">
-        <li><b>5</b> projects</li>
-        <li><b>2</b> internships</li>
-        <li><b>4</b> languages</li>
-      </ul>
-      <p class="bio">
-        <b>Data Science Student</b><br>
-        🤖 AI &amp; Machine Learning intern<br>
-        🎤 Speech winner · 🤝 Volunteer · 🧭 Leader<br>
-        📍 Haripur, Pakistan<br>
-        🎓 Pak-Austria Fachhochschule
-      </p>
+<!-- BILLBOARD -->
+<section class="hero" id="top">
+  <div class="hero-img" style="background-image:url('fahad.jpg')"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-copy">
+    <p class="badge">A DATA SCIENCE ORIGINAL</p>
+    <h1>Fahad<br>Abdullah</h1>
+    <p class="meta"><span class="match">Open to opportunities</span> <span>2026</span> <span class="tag">AI / ML</span> <span>Haripur, Pakistan</span></p>
+    <p class="desc">Data science student at Pak-Austria Fachhochschule. AI and machine learning intern, builder of practical projects, volunteer, leader and award-winning speaker.</p>
+    <div class="cta">
+      <a class="btn play" href="#projects">▶ Watch my work</a>
+      <button class="btn info" id="more">ⓘ More info</button>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- HIGHLIGHTS -->
-  <section class="highlights" aria-label="Highlights">
-    <button data-story="about"><span class="ring"><i>👋</i></span>About</button>
-    <button data-story="education"><span class="ring"><i>🎓</i></span>Education</button>
-    <button data-story="skills"><span class="ring"><i>🛠️</i></span>Skills</button>
-    <button data-story="leadership"><span class="ring"><i>⭐</i></span>Leadership</button>
-    <button data-story="volunteer"><span class="ring"><i>🤝</i></span>Volunteer</button>
-    <button data-story="awards"><span class="ring"><i>🏆</i></span>Awards</button>
-    <button data-story="travel"><span class="ring"><i>📷</i></span>Life</button>
-  </section>
+<main>
 
-  <!-- TABS -->
-  <nav class="tabs" role="tablist">
-    <button class="tab active" data-tab="projects" role="tab">▦ Projects</button>
-    <button class="tab" data-tab="experience" role="tab">💼 Experience</button>
-    <button class="tab" data-tab="education" role="tab">🎓 Education</button>
-    <button class="tab" data-tab="contact" role="tab">✉ Contact</button>
-  </nav>
+<!-- PROJECTS -->
+<section class="row reveal" id="projects">
+  <h2>Original Projects</h2>
+  <div class="rail">
+    <button class="card c1" data-p="0"><span class="ico">📚</span><b>Library Management System</b><small>Software</small></button>
+    <button class="card c2" data-p="1"><span class="ico">🧠</span><b>Student Burnout System</b><small>Data &amp; Wellbeing</small></button>
+    <button class="card c3" data-p="2"><span class="ico">🏦</span><b>Bank Management System</b><small>Software</small></button>
+    <button class="card c4" data-p="3"><span class="ico">🐍</span><b>Snake Game</b><small>Game</small></button>
+    <button class="card c5" data-p="4"><span class="ico">💸</span><b>Budget Friendly for Hostelites</b><small>Student tool</small></button>
+  </div>
+</section>
 
-  <!-- PROJECTS GRID -->
-  <section id="tab-projects" class="panel active">
-    <div class="grid">
-      <button class="tile g1" data-project="0"><span class="emoji">📚</span><span class="cap">Library Management System</span></button>
-      <button class="tile g2" data-project="1"><span class="emoji">🧠</span><span class="cap">Student Burnout System</span></button>
-      <button class="tile g3" data-project="2"><span class="emoji">🏦</span><span class="cap">Bank Management System</span></button>
-      <button class="tile g4" data-project="3"><span class="emoji">🐍</span><span class="cap">Snake Game</span></button>
-      <button class="tile g5" data-project="4"><span class="emoji">💸</span><span class="cap">Budget Friendly for Hostelites</span></button>
-      <div class="tile soon"><span class="emoji">➕</span><span class="cap">More coming soon</span></div>
-    </div>
-  </section>
+<!-- EXPERIENCE -->
+<section class="row reveal" id="experience">
+  <h2>Continue Watching: Experience</h2>
+  <div class="rail">
+    <button class="card wide w1" data-e="0"><span class="ico">🤖</span><b>AI &amp; ML Intern</b><small>Glexit</small><i class="prog" style="--w:70%"></i></button>
+    <button class="card wide w2" data-e="1"><span class="ico">🏛️</span><b>AI &amp; ML Intern</b><small>Pak-Austria Fachhochschule</small><i class="prog" style="--w:55%"></i></button>
+    <button class="card wide w3" data-e="2"><span class="ico">⭐</span><b>Leadership</b><small>School &amp; College</small><i class="prog" style="--w:85%"></i></button>
+    <button class="card wide w4" data-e="3"><span class="ico">🤝</span><b>Volunteer</b><small>Different societies</small><i class="prog" style="--w:90%"></i></button>
+    <button class="card wide w5" data-e="4"><span class="ico">🏆</span><b>Speeches &amp; Exhibitions</b><small>Awards and certificates</small><i class="prog" style="--w:75%"></i></button>
+  </div>
+</section>
 
-  <!-- EXPERIENCE -->
-  <section id="tab-experience" class="panel">
-    <article class="post">
-      <div class="post-head"><span class="dot">🤖</span><div><b>AI &amp; Machine Learning Intern</b><small>Glexit</small></div></div>
-      <p>Internship in artificial intelligence and machine learning.</p>
-    </article>
-    <article class="post">
-      <div class="post-head"><span class="dot">🏛️</span><div><b>AI &amp; Machine Learning Intern</b><small>Pak-Austria Fachhochschule</small></div></div>
-      <p>Internship in artificial intelligence and machine learning at my university.</p>
-    </article>
-    <article class="post">
-      <div class="post-head"><span class="dot">⭐</span><div><b>Leadership roles</b><small>School &amp; College</small></div></div>
-      <p>Held leadership positions at different levels in school and college.</p>
-    </article>
-    <article class="post">
-      <div class="post-head"><span class="dot">🤝</span><div><b>Volunteer</b><small>Different societies</small></div></div>
-      <p>Played many volunteer roles across societies and earned certifications for volunteer work and exhibitions.</p>
-    </article>
-  </section>
+<!-- EPISODES -->
+<section class="row reveal" id="episodes">
+  <h2>Season 1: Education</h2>
+  <ol class="episodes">
+    <li><span class="num">1</span><div><b>BS Data Science</b><p>Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology</p></div><span class="runtime">Now</span></li>
+    <li><span class="num">2</span><div><b>HSSC, Pre-Engineering</b><p>BISE Abbottabad · 2022 – 2023 · 883/1100 · Grade A1</p></div><span class="runtime">80%</span></li>
+    <li><span class="num">3</span><div><b>SSC, Physics, Chemistry, Mathematics</b><p>BISE Abbottabad · 2020 – 2021 · 1076/1100 · Grade A1</p></div><span class="runtime">97%</span></li>
+    <li><span class="num">+</span><div><b>Bonus: Office Automation</b><p>Short course</p></div><span class="runtime">Course</span></li>
+  </ol>
+</section>
 
-  <!-- EDUCATION -->
-  <section id="tab-education" class="panel">
-    <article class="post">
-      <div class="post-head"><span class="dot">🎓</span><div><b>BS Data Science</b><small>Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology</small></div></div>
-      <p>Currently studying.</p>
-    </article>
-    <article class="post">
-      <div class="post-head"><span class="dot">📘</span><div><b>HSSC, Pre-Engineering</b><small>BISE Abbottabad · 2022 – 2023</small></div></div>
-      <p><b>883 / 1100 · A1 · 80%</b></p>
-    </article>
-    <article class="post">
-      <div class="post-head"><span class="dot">📗</span><div><b>SSC, Physics · Chemistry · Mathematics</b><small>BISE Abbottabad · 2020 – 2021</small></div></div>
-      <p><b>1076 / 1100 · A1 · 97%</b></p>
-    </article>
-    <article class="post">
-      <div class="post-head"><span class="dot">💻</span><div><b>Course</b><small>Office Automation</small></div></div>
-    </article>
-  </section>
+<!-- SKILLS -->
+<section class="row reveal" id="skills">
+  <h2>Genres &amp; Skills</h2>
+  <div class="skill-grid">
+    <div class="box"><h3>Technical</h3><div class="chips"><span>Calculus</span><span>Algebra</span><span>Differential equations</span><span>AI &amp; ML</span><span>Research</span><span>Lab equipment</span><span>Office Automation</span><span>Media awareness</span></div></div>
+    <div class="box"><h3>Personal</h3><div class="chips"><span>Communication</span><span>Public speaking</span><span>Teamwork</span><span>Leadership</span><span>Organization</span><span>Record keeping</span><span>Open to new ideas</span></div></div>
+    <div class="box"><h3>Audio (Languages)</h3><div class="chips"><span>Urdu</span><span>English (B2)</span><span>Punjabi</span><span>Hindko</span></div></div>
+    <div class="box"><h3>Behind the scenes</h3><div class="chips"><span>Traveling</span><span>Photography</span><span>Hiking</span><span>New experiences</span><span>Football</span><span>Cricket</span></div></div>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section id="tab-contact" class="panel">
-    <article class="post" id="contact">
-      <div class="post-head"><span class="dot">✉️</span><div><b>Let's connect</b><small>Open to research, internships and collaboration</small></div></div>
-      <p>📧 <a href="mailto:fahadx000111@gmail.com">fahadx000111@gmail.com</a></p>
-      <p>📞 <a href="tel:+923434193249">+92 343 4193249</a></p>
-      <p>📍 Haripur, Khyber Pakhtunkhwa, Pakistan</p>
-    </article>
-  </section>
+<!-- CONTACT -->
+<section class="row contact reveal" id="contact">
+  <h2>Let's make something together</h2>
+  <p>Open to research opportunities, internships and collaboration.</p>
+  <div class="cta">
+    <a class="btn play" href="mailto:fahadx000111@gmail.com">✉ fahadx000111@gmail.com</a>
+    <a class="btn info" href="tel:+923434193249">📞 +92 343 4193249</a>
+  </div>
+  <p class="loc">📍 Haripur, Khyber Pakhtunkhwa, Pakistan</p>
+</section>
 
 </main>
 
 <footer>© 2026 Fahad Abdullah</footer>
 
-<!-- STORY / PROJECT MODAL -->
 <div class="modal" id="modal" hidden>
   <div class="sheet" role="dialog" aria-modal="true">
-    <div class="bars" id="bars"></div>
     <button class="close" id="close" aria-label="Close">✕</button>
-    <div class="sheet-body" id="sheet-body"></div>
+    <div id="sheet-body"></div>
   </div>
 </div>
 
 <script>
-const stories = {
-  about: { icon:"👋", title:"About me", html:`
-    <p>I'm Fahad Abdullah from Haripur, Khyber Pakhtunkhwa, Pakistan. After pre-engineering at intermediate level I moved into data science, where I enjoy turning data and ideas into working solutions.</p>
-    <p>I'm looking for good research opportunities to sharpen my skills and explore new areas in my field.</p>`},
-  education: { icon:"🎓", title:"Education", html:`
-    <ul class="plain">
-      <li><b>BS Data Science</b><br>Pak-Austria Fachhochschule</li>
-      <li><b>HSSC Pre-Engineering</b><br>80% · 883/1100 · A1</li>
-      <li><b>SSC</b><br>97% · 1076/1100 · A1</li>
-    </ul>`},
-  skills: { icon:"🛠️", title:"Skills", html:`
-    <p class="label">Technical</p>
-    <div class="chips"><span>Calculus</span><span>Algebra</span><span>Differential equations</span><span>AI &amp; ML</span><span>Research</span><span>Lab equipment</span><span>Office Automation</span><span>Media awareness</span></div>
-    <p class="label">Personal</p>
-    <div class="chips"><span>Communication</span><span>Public speaking</span><span>Teamwork</span><span>Leadership</span><span>Organization</span><span>Record keeping</span></div>
-    <p class="label">Languages</p>
-    <div class="chips"><span>Urdu</span><span>English (B2)</span><span>Punjabi</span><span>Hindko</span></div>`},
-  leadership: { icon:"⭐", title:"Leadership", html:`
-    <p>I have held leadership roles at different levels in both school and college, leading teams, organizing activities and representing fellow students.</p>`},
-  volunteer: { icon:"🤝", title:"Volunteering", html:`
-    <p>I have played many volunteer roles in different societies.</p>
-    <p>Along the way I have earned several certifications for volunteer work and for taking part in exhibitions.</p>`},
-  awards: { icon:"🏆", title:"Awards", html:`
-    <p>Notable achievements in speeches and public speaking events.</p>
-    <p>Multiple certifications in volunteer work and exhibitions.</p>`},
-  travel: { icon:"📷", title:"Life outside class", html:`
-    <div class="chips"><span>Traveling</span><span>Photography</span><span>Hiking</span><span>New experiences</span><span>Football</span><span>Cricket</span></div>
-    <p>I love capturing moments through my camera and exploring new places.</p>`}
-};
-
 const projects = [
-  { icon:"📚", title:"Library Management System", html:"<p>A system to manage books, members and borrowing records in a library.</p>" },
-  { icon:"🧠", title:"Student Burnout System", html:"<p>A project focused on understanding and tracking burnout among students.</p>" },
-  { icon:"🏦", title:"Bank Management System", html:"<p>A banking application for handling accounts and everyday transactions.</p>" },
-  { icon:"🐍", title:"Snake Game", html:"<p>A classic snake game built as a fun programming exercise.</p>" },
-  { icon:"💸", title:"Budget Friendly for Hostelites", html:"<p>A tool that helps hostel students plan and control their monthly spending.</p>" }
+  {i:"📚", t:"Library Management System", d:"A system to manage books, members and borrowing records in a library."},
+  {i:"🧠", t:"Student Burnout System", d:"A project focused on understanding and tracking burnout among students."},
+  {i:"🏦", t:"Bank Management System", d:"A banking application for handling accounts and everyday transactions."},
+  {i:"🐍", t:"Snake Game", d:"A classic snake game built as a fun programming exercise."},
+  {i:"💸", t:"Budget Friendly for Hostelites", d:"A tool that helps hostel students plan and control their monthly spending."}
 ];
+const exp = [
+  {i:"🤖", t:"AI & Machine Learning Intern, Glexit", d:"Internship in artificial intelligence and machine learning."},
+  {i:"🏛️", t:"AI & Machine Learning Intern, Pak-Austria Fachhochschule", d:"Internship in artificial intelligence and machine learning at my university."},
+  {i:"⭐", t:"Leadership", d:"Held leadership roles at different levels in school and college."},
+  {i:"🤝", t:"Volunteer", d:"Played many volunteer roles in different societies, with certifications for volunteer work."},
+  {i:"🏆", t:"Speeches & Exhibitions", d:"Notable achievements in speeches, plus certificates for taking part in exhibitions."}
+];
+const about = {i:"👋", t:"About Fahad", d:"I'm from Haripur, Khyber Pakhtunkhwa, Pakistan. After pre-engineering at intermediate level I moved into data science, where I enjoy turning data and ideas into working solutions. I'm looking for good research opportunities to sharpen my skills and explore new areas in my field."};
 
-const modal = document.getElementById('modal');
-const body = document.getElementById('sheet-body');
-const bars = document.getElementById('bars');
-let timer;
-
-function openModal(item, withBar){
-  body.innerHTML = `<div class="sheet-icon">${item.icon}</div><h2>${item.title}</h2>${item.html}`;
-  bars.innerHTML = withBar ? '<span><i></i></span>' : '';
-  modal.hidden = false;
-  document.body.style.overflow = 'hidden';
-  clearTimeout(timer);
-  if (withBar) timer = setTimeout(closeModal, 9000);
+const modal = document.getElementById('modal'), body = document.getElementById('sheet-body');
+function open_(x){
+  body.innerHTML = `<div class="sheet-ico">${x.i}</div><h3>${x.t}</h3><p>${x.d}</p>`;
+  modal.hidden = false; document.body.style.overflow = 'hidden';
 }
-function closeModal(){
-  modal.hidden = true;
-  document.body.style.overflow = '';
-  clearTimeout(timer);
-}
-document.querySelectorAll('[data-story]').forEach(b =>
-  b.addEventListener('click', () => openModal(stories[b.dataset.story], true)));
-document.querySelectorAll('[data-project]').forEach(b =>
-  b.addEventListener('click', () => openModal(projects[+b.dataset.project], false)));
-document.getElementById('close').addEventListener('click', closeModal);
-modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+function close_(){ modal.hidden = true; document.body.style.overflow = ''; }
+document.querySelectorAll('[data-p]').forEach(b => b.onclick = () => open_(projects[+b.dataset.p]));
+document.querySelectorAll('[data-e]').forEach(b => b.onclick = () => open_(exp[+b.dataset.e]));
+document.getElementById('more').onclick = () => open_(about);
+document.getElementById('close').onclick = close_;
+modal.onclick = e => { if (e.target === modal) close_(); };
+document.addEventListener('keydown', e => { if (e.key === 'Escape') close_(); });
 
-document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
-  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
-  document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
-  t.classList.add('active');
-  document.getElementById('tab-' + t.dataset.tab).classList.add('active');
-}));
-document.querySelector('.mini-btn').addEventListener('click', e => {
-  e.preventDefault();
-  document.querySelector('[data-tab="contact"]').click();
-  document.getElementById('tab-contact').scrollIntoView({behavior:'smooth'});
-});
+window.addEventListener('scroll', () => document.getElementById('nav').classList.toggle('solid', scrollY > 40));
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 </body>
 </html>
