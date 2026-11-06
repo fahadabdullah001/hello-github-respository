@@ -3,181 +3,215 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fahad Abdullah | Data Science Student</title>
-<meta name="description" content="Portfolio of Fahad Abdullah, Data Science student with experience in AI and machine learning, projects, leadership and volunteering.">
+<title>Fahad Abdullah | Data Science Portfolio</title>
+<meta name="description" content="Portfolio of Fahad Abdullah, Data Science student with AI and machine learning internships, projects, leadership and volunteering.">
+<meta name="theme-color" content="#0b0b10">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="nav">
-  <a class="brand" href="#top">Fahad Abdullah</a>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header class="topbar">
+  <span class="handle">fahad.abdullah</span>
+  <a class="mini-btn" href="#contact">Contact</a>
 </header>
 
-<main id="top">
+<main class="wrap">
 
-  <section class="hero">
-    <img class="photo" src="photo.png" alt="Portrait of Fahad Abdullah">
-    <div>
-      <p class="eyebrow">Data Science Student</p>
-      <h1>Fahad Abdullah</h1>
-      <p class="lead">Data science student at Pak-Austria Fachhochschule with hands-on experience in AI and machine learning, a builder of practical software projects, and an award-winning public speaker.</p>
-      <div class="actions">
-        <a class="btn" href="#contact">Get in touch</a>
-        <a class="btn ghost" href="#projects">View projects</a>
+  <!-- PROFILE -->
+  <section class="profile">
+    <div class="avatar-ring"><img src="photo.png" alt="Fahad Abdullah"></div>
+    <div class="info">
+      <div class="row-name">
+        <h1>Fahad Abdullah</h1>
+        <div class="btns">
+          <a class="btn primary" href="mailto:fahadx000111@gmail.com">Message</a>
+          <a class="btn" href="tel:+923434193249">Call</a>
+        </div>
       </div>
+      <ul class="stats">
+        <li><b>5</b> projects</li>
+        <li><b>2</b> internships</li>
+        <li><b>4</b> languages</li>
+      </ul>
+      <p class="bio">
+        <b>Data Science Student</b><br>
+        🤖 AI &amp; Machine Learning intern<br>
+        🎤 Speech winner · 🤝 Volunteer · 🧭 Leader<br>
+        📍 Haripur, Pakistan<br>
+        🎓 Pak-Austria Fachhochschule
+      </p>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About me</h2>
-    <p>I come from Haripur, Khyber Pakhtunkhwa, Pakistan. After completing pre-engineering at intermediate level, I moved into data science, where I enjoy turning data and ideas into working solutions. I am looking for good research opportunities to sharpen my skills and explore new areas in my field.</p>
-    <p>Outside the classroom I take part in societies, exhibitions and speech events, and I like traveling, photography and trying new experiences.</p>
+  <!-- HIGHLIGHTS -->
+  <section class="highlights" aria-label="Highlights">
+    <button data-story="about"><span class="ring"><i>👋</i></span>About</button>
+    <button data-story="education"><span class="ring"><i>🎓</i></span>Education</button>
+    <button data-story="skills"><span class="ring"><i>🛠️</i></span>Skills</button>
+    <button data-story="leadership"><span class="ring"><i>⭐</i></span>Leadership</button>
+    <button data-story="volunteer"><span class="ring"><i>🤝</i></span>Volunteer</button>
+    <button data-story="awards"><span class="ring"><i>🏆</i></span>Awards</button>
+    <button data-story="travel"><span class="ring"><i>📷</i></span>Life</button>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <div class="timeline">
-      <article>
-        <span class="date">Present</span>
-        <h3>BS Data Science</h3>
-        <p>Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology</p>
-      </article>
-      <article>
-        <span class="date">2022 – 2023</span>
-        <h3>Higher Secondary School Certificate (Pre-Engineering)</h3>
-        <p>Board of Intermediate and Secondary Education, Abbottabad</p>
-        <p class="score">883 / 1100 · Grade A1 · 80%</p>
-      </article>
-      <article>
-        <span class="date">2020 – 2021</span>
-        <h3>Secondary School Certificate (Physics, Chemistry, Mathematics)</h3>
-        <p>Board of Intermediate and Secondary Education, Abbottabad</p>
-        <p class="score">1076 / 1100 · Grade A1 · 97%</p>
-      </article>
-    </div>
-    <p class="note"><strong>Course:</strong> Office Automation</p>
-  </section>
+  <!-- TABS -->
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="projects" role="tab">▦ Projects</button>
+    <button class="tab" data-tab="experience" role="tab">💼 Experience</button>
+    <button class="tab" data-tab="education" role="tab">🎓 Education</button>
+    <button class="tab" data-tab="contact" role="tab">✉ Contact</button>
+  </nav>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <!-- PROJECTS GRID -->
+  <section id="tab-projects" class="panel active">
     <div class="grid">
-      <article class="card">
-        <h3>Library Management System</h3>
-        <p>A system to manage books, members and borrowing records in a library.</p>
-      </article>
-      <article class="card">
-        <h3>Student Burnout System</h3>
-        <p>A project focused on understanding and tracking burnout among students.</p>
-      </article>
-      <article class="card">
-        <h3>Bank Management System</h3>
-        <p>A banking application for handling accounts and everyday transactions.</p>
-      </article>
-      <article class="card">
-        <h3>Snake Game</h3>
-        <p>A classic snake game built as a fun programming exercise.</p>
-      </article>
-      <article class="card">
-        <h3>Budget Friendly for Hostelites</h3>
-        <p>A tool that helps hostel students plan and control their monthly spending.</p>
-      </article>
+      <button class="tile g1" data-project="0"><span class="emoji">📚</span><span class="cap">Library Management System</span></button>
+      <button class="tile g2" data-project="1"><span class="emoji">🧠</span><span class="cap">Student Burnout System</span></button>
+      <button class="tile g3" data-project="2"><span class="emoji">🏦</span><span class="cap">Bank Management System</span></button>
+      <button class="tile g4" data-project="3"><span class="emoji">🐍</span><span class="cap">Snake Game</span></button>
+      <button class="tile g5" data-project="4"><span class="emoji">💸</span><span class="cap">Budget Friendly for Hostelites</span></button>
+      <div class="tile soon"><span class="emoji">➕</span><span class="cap">More coming soon</span></div>
     </div>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <article>
-        <span class="date">Internship</span>
-        <h3>AI &amp; Machine Learning Intern</h3>
-        <p>Glexit</p>
-      </article>
-      <article>
-        <span class="date">Internship</span>
-        <h3>AI &amp; Machine Learning Intern</h3>
-        <p>Pak-Austria Fachhochschule</p>
-      </article>
-      <article>
-        <span class="date">School &amp; College</span>
-        <h3>Leadership roles</h3>
-        <p>Held leadership positions at different levels in school and college.</p>
-      </article>
-      <article>
-        <span class="date">Societies</span>
-        <h3>Volunteer</h3>
-        <p>Served in a variety of volunteer roles across different societies.</p>
-      </article>
-    </div>
+  <!-- EXPERIENCE -->
+  <section id="tab-experience" class="panel">
+    <article class="post">
+      <div class="post-head"><span class="dot">🤖</span><div><b>AI &amp; Machine Learning Intern</b><small>Glexit</small></div></div>
+      <p>Internship in artificial intelligence and machine learning.</p>
+    </article>
+    <article class="post">
+      <div class="post-head"><span class="dot">🏛️</span><div><b>AI &amp; Machine Learning Intern</b><small>Pak-Austria Fachhochschule</small></div></div>
+      <p>Internship in artificial intelligence and machine learning at my university.</p>
+    </article>
+    <article class="post">
+      <div class="post-head"><span class="dot">⭐</span><div><b>Leadership roles</b><small>School &amp; College</small></div></div>
+      <p>Held leadership positions at different levels in school and college.</p>
+    </article>
+    <article class="post">
+      <div class="post-head"><span class="dot">🤝</span><div><b>Volunteer</b><small>Different societies</small></div></div>
+      <p>Played many volunteer roles across societies and earned certifications for volunteer work and exhibitions.</p>
+    </article>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="cols">
-      <div>
-        <h3>Technical</h3>
-        <ul class="tags">
-          <li>Calculus</li><li>Algebra</li><li>Differential equations</li>
-          <li>AI &amp; Machine Learning</li><li>Research</li>
-          <li>Laboratory equipment</li><li>Office Automation</li>
-          <li>Media &amp; creative awareness</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Personal</h3>
-        <ul class="tags">
-          <li>Communication</li><li>Public speaking</li><li>Teamwork</li>
-          <li>Leadership</li><li>Organization</li><li>Record keeping</li>
-          <li>Open to new ideas</li><li>Hard working</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Languages</h3>
-        <ul class="tags">
-          <li>Urdu (mother tongue)</li><li>English (B2)</li><li>Punjabi</li><li>Hindko</li>
-        </ul>
-      </div>
-    </div>
+  <!-- EDUCATION -->
+  <section id="tab-education" class="panel">
+    <article class="post">
+      <div class="post-head"><span class="dot">🎓</span><div><b>BS Data Science</b><small>Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology</small></div></div>
+      <p>Currently studying.</p>
+    </article>
+    <article class="post">
+      <div class="post-head"><span class="dot">📘</span><div><b>HSSC, Pre-Engineering</b><small>BISE Abbottabad · 2022 – 2023</small></div></div>
+      <p><b>883 / 1100 · A1 · 80%</b></p>
+    </article>
+    <article class="post">
+      <div class="post-head"><span class="dot">📗</span><div><b>SSC, Physics · Chemistry · Mathematics</b><small>BISE Abbottabad · 2020 – 2021</small></div></div>
+      <p><b>1076 / 1100 · A1 · 97%</b></p>
+    </article>
+    <article class="post">
+      <div class="post-head"><span class="dot">💻</span><div><b>Course</b><small>Office Automation</small></div></div>
+    </article>
   </section>
 
-  <section id="achievements">
-    <h2>Certifications &amp; Achievements</h2>
-    <ul class="list">
-      <li>Multiple certifications for volunteer work.</li>
-      <li>Certificates for taking part in exhibitions.</li>
-      <li>Notable achievements in speech and public speaking events.</li>
-    </ul>
-  </section>
-
-  <section id="interests">
-    <h2>Interests</h2>
-    <ul class="tags">
-      <li>Traveling</li><li>Photography</li><li>Hiking</li><li>Trying new experiences</li><li>Football</li><li>Cricket</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Open to research opportunities, internships and collaboration. Feel free to reach out.</p>
-    <ul class="contact">
-      <li><strong>Email:</strong> <a href="mailto:fahadx000111@gmail.com">fahadx000111@gmail.com</a></li>
-      <li><strong>Phone:</strong> <a href="tel:+923434193249">+92 343 4193249</a></li>
-      <li><strong>Location:</strong> Haripur, Khyber Pakhtunkhwa, Pakistan</li>
-    </ul>
+  <!-- CONTACT -->
+  <section id="tab-contact" class="panel">
+    <article class="post" id="contact">
+      <div class="post-head"><span class="dot">✉️</span><div><b>Let's connect</b><small>Open to research, internships and collaboration</small></div></div>
+      <p>📧 <a href="mailto:fahadx000111@gmail.com">fahadx000111@gmail.com</a></p>
+      <p>📞 <a href="tel:+923434193249">+92 343 4193249</a></p>
+      <p>📍 Haripur, Khyber Pakhtunkhwa, Pakistan</p>
+    </article>
   </section>
 
 </main>
 
-<footer>
-  <p>© 2026 Fahad Abdullah</p>
-</footer>
+<footer>© 2026 Fahad Abdullah</footer>
 
+<!-- STORY / PROJECT MODAL -->
+<div class="modal" id="modal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true">
+    <div class="bars" id="bars"></div>
+    <button class="close" id="close" aria-label="Close">✕</button>
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+</div>
+
+<script>
+const stories = {
+  about: { icon:"👋", title:"About me", html:`
+    <p>I'm Fahad Abdullah from Haripur, Khyber Pakhtunkhwa, Pakistan. After pre-engineering at intermediate level I moved into data science, where I enjoy turning data and ideas into working solutions.</p>
+    <p>I'm looking for good research opportunities to sharpen my skills and explore new areas in my field.</p>`},
+  education: { icon:"🎓", title:"Education", html:`
+    <ul class="plain">
+      <li><b>BS Data Science</b><br>Pak-Austria Fachhochschule</li>
+      <li><b>HSSC Pre-Engineering</b><br>80% · 883/1100 · A1</li>
+      <li><b>SSC</b><br>97% · 1076/1100 · A1</li>
+    </ul>`},
+  skills: { icon:"🛠️", title:"Skills", html:`
+    <p class="label">Technical</p>
+    <div class="chips"><span>Calculus</span><span>Algebra</span><span>Differential equations</span><span>AI &amp; ML</span><span>Research</span><span>Lab equipment</span><span>Office Automation</span><span>Media awareness</span></div>
+    <p class="label">Personal</p>
+    <div class="chips"><span>Communication</span><span>Public speaking</span><span>Teamwork</span><span>Leadership</span><span>Organization</span><span>Record keeping</span></div>
+    <p class="label">Languages</p>
+    <div class="chips"><span>Urdu</span><span>English (B2)</span><span>Punjabi</span><span>Hindko</span></div>`},
+  leadership: { icon:"⭐", title:"Leadership", html:`
+    <p>I have held leadership roles at different levels in both school and college, leading teams, organizing activities and representing fellow students.</p>`},
+  volunteer: { icon:"🤝", title:"Volunteering", html:`
+    <p>I have played many volunteer roles in different societies.</p>
+    <p>Along the way I have earned several certifications for volunteer work and for taking part in exhibitions.</p>`},
+  awards: { icon:"🏆", title:"Awards", html:`
+    <p>Notable achievements in speeches and public speaking events.</p>
+    <p>Multiple certifications in volunteer work and exhibitions.</p>`},
+  travel: { icon:"📷", title:"Life outside class", html:`
+    <div class="chips"><span>Traveling</span><span>Photography</span><span>Hiking</span><span>New experiences</span><span>Football</span><span>Cricket</span></div>
+    <p>I love capturing moments through my camera and exploring new places.</p>`}
+};
+
+const projects = [
+  { icon:"📚", title:"Library Management System", html:"<p>A system to manage books, members and borrowing records in a library.</p>" },
+  { icon:"🧠", title:"Student Burnout System", html:"<p>A project focused on understanding and tracking burnout among students.</p>" },
+  { icon:"🏦", title:"Bank Management System", html:"<p>A banking application for handling accounts and everyday transactions.</p>" },
+  { icon:"🐍", title:"Snake Game", html:"<p>A classic snake game built as a fun programming exercise.</p>" },
+  { icon:"💸", title:"Budget Friendly for Hostelites", html:"<p>A tool that helps hostel students plan and control their monthly spending.</p>" }
+];
+
+const modal = document.getElementById('modal');
+const body = document.getElementById('sheet-body');
+const bars = document.getElementById('bars');
+let timer;
+
+function openModal(item, withBar){
+  body.innerHTML = `<div class="sheet-icon">${item.icon}</div><h2>${item.title}</h2>${item.html}`;
+  bars.innerHTML = withBar ? '<span><i></i></span>' : '';
+  modal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  clearTimeout(timer);
+  if (withBar) timer = setTimeout(closeModal, 9000);
+}
+function closeModal(){
+  modal.hidden = true;
+  document.body.style.overflow = '';
+  clearTimeout(timer);
+}
+document.querySelectorAll('[data-story]').forEach(b =>
+  b.addEventListener('click', () => openModal(stories[b.dataset.story], true)));
+document.querySelectorAll('[data-project]').forEach(b =>
+  b.addEventListener('click', () => openModal(projects[+b.dataset.project], false)));
+document.getElementById('close').addEventListener('click', closeModal);
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+  t.classList.add('active');
+  document.getElementById('tab-' + t.dataset.tab).classList.add('active');
+}));
+document.querySelector('.mini-btn').addEventListener('click', e => {
+  e.preventDefault();
+  document.querySelector('[data-tab="contact"]').click();
+  document.getElementById('tab-contact').scrollIntoView({behavior:'smooth'});
+});
+</script>
 </body>
 </html>
